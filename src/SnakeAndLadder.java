@@ -14,6 +14,8 @@ public class SnakeAndLadder {
             if (choose == 0) {
                 //ladder
                 position = position + dice;
+                if (position > 100)
+                    position = position - dice;
             } else if (choose == 1) {
                 //snake
                 position = position - dice;
